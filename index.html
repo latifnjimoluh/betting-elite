@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Betting Élite - Dashboard Analytique V6</title>
+    <title>Betting Élite - Dashboard Analytique V7</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
     <style>
@@ -20,7 +20,6 @@
         .badge-danger { background-color: rgba(239, 68, 68, 0.15); color: #f87171; border: 1px solid rgba(239, 68, 68, 0.3); }
         .league-tab.active { border-bottom: 2px solid #3b82f6; color: #3b82f6; }
         
-        /* Cache la scrollbar tout en gardant le scroll */
         .no-scrollbar::-webkit-scrollbar { display: none; }
         .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
     </style>
@@ -34,13 +33,13 @@
             </div>
             <h1 class="text-lg md:text-xl font-bold tracking-tight uppercase leading-none">
                 Betting <span class="text-blue-500">Élite</span> 
-                <span class="block md:inline text-[10px] md:text-xs font-normal text-slate-500 md:ml-2 mt-0.5 md:mt-0">V6.0 - Anti-Piège</span>
+                <span class="block md:inline text-[10px] md:text-xs font-normal text-slate-500 md:ml-2 mt-0.5 md:mt-0">Dimanche 8 Fév.</span>
             </h1>
         </div>
         <div class="hidden md:flex items-center gap-6 text-sm font-medium text-slate-400">
             <span class="flex items-center gap-2 px-3 py-1 bg-slate-800 rounded-full border border-slate-700">
-                <span class="w-2 h-2 bg-red-500 rounded-full animate-pulse"></span>
-                Live Data
+                <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
+                41 Matchs Analysés
             </span>
         </div>
     </header>
@@ -49,43 +48,43 @@
         
         <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4 mb-8">
             <div class="glass p-4 md:p-5 rounded-2xl">
-                <p class="text-slate-400 text-[9px] md:text-[10px] font-bold uppercase tracking-widest mb-1">Matchs Analysés</p>
-                <h3 class="text-xl md:text-2xl font-black">29</h3>
+                <p class="text-slate-400 text-[9px] md:text-[10px] font-bold uppercase tracking-widest mb-1">Total Matchs</p>
+                <h3 class="text-xl md:text-2xl font-black">41</h3>
             </div>
             <div class="glass p-4 md:p-5 rounded-2xl border-l-4 border-yellow-500">
-                <p class="text-slate-400 text-[9px] md:text-[10px] font-bold uppercase tracking-widest mb-1">Value Absolue</p>
-                <h3 class="text-xl md:text-2xl font-black text-yellow-400 truncate">Sparta Rott.</h3>
+                <p class="text-slate-400 text-[9px] md:text-[10px] font-bold uppercase tracking-widest mb-1">Top Value</p>
+                <h3 class="text-xl md:text-2xl font-black text-yellow-400 truncate">PSV (40%)</h3>
             </div>
             <div class="glass p-4 md:p-5 rounded-2xl border-l-4 border-green-500">
                 <p class="text-slate-400 text-[9px] md:text-[10px] font-bold uppercase tracking-widest mb-1">Banker Sûr</p>
-                <h3 class="text-xl md:text-2xl font-black text-green-400 truncate">Sociedad</h3>
+                <h3 class="text-xl md:text-2xl font-black text-green-400 truncate">Benfica (-1.5)</h3>
             </div>
             <div class="glass p-4 md:p-5 rounded-2xl border-l-4 border-red-500">
-                <p class="text-slate-400 text-[9px] md:text-[10px] font-bold uppercase tracking-widest mb-1">Piège Mortel</p>
-                <h3 class="text-xl md:text-2xl font-black text-red-400 truncate">Sevilla</h3>
+                <p class="text-slate-400 text-[9px] md:text-[10px] font-bold uppercase tracking-widest mb-1">Le Grand Piège</p>
+                <h3 class="text-xl md:text-2xl font-black text-red-400 truncate">Sevilla & Nice</h3>
             </div>
         </div>
 
         <section class="mb-10">
             <h2 class="text-lg font-bold mb-4 flex items-center gap-2 text-slate-100">
-                <i data-lucide="layout-list" class="text-blue-500"></i> Tickets Recommandés
+                <i data-lucide="layout-list" class="text-blue-500"></i> Tickets du Dimanche
             </h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div class="ticket-gradient-safe rounded-3xl p-1 shadow-lg shadow-green-900/10">
                     <div class="glass h-full rounded-[20px] p-5 flex flex-col">
                         <div class="flex justify-between items-center mb-4 pb-4 border-b border-slate-700/50">
                             <h3 class="font-bold text-green-400 flex items-center gap-2"><i data-lucide="lock" class="w-4 h-4"></i> BET BÉTON</h3>
-                            <span class="text-[9px] bg-green-900/50 text-green-300 px-2 py-1 rounded font-bold">90%</span>
+                            <span class="text-[9px] bg-green-900/50 text-green-300 px-2 py-1 rounded font-bold">Confiance 9/10</span>
                         </div>
                         <ul class="space-y-3 text-sm mb-6 flex-1">
-                            <li class="flex justify-between"><span>Arsenal (H-1)</span> <span class="font-bold text-green-400">✓</span></li>
-                            <li class="flex justify-between"><span>Barça (H-1.5)</span> <span class="font-bold text-green-400">✓</span></li>
-                            <li class="flex justify-between"><span>R. Sociedad</span> <span class="font-bold text-green-400">✓</span></li>
-                            <li class="flex justify-between"><span>Lyon</span> <span class="font-bold text-green-400">✓</span></li>
-                            <li class="flex justify-between"><span>Stuttgart</span> <span class="font-bold text-green-400">✓</span></li>
+                            <li class="flex justify-between"><span>Benfica (H-1.5)</span> <span class="font-bold text-green-400">✓</span></li>
+                            <li class="flex justify-between"><span>PSG (Victoire)</span> <span class="font-bold text-green-400">✓</span></li>
+                            <li class="flex justify-between"><span>Galatasaray (Victoire)</span> <span class="font-bold text-green-400">✓</span></li>
+                            <li class="flex justify-between"><span>Bayern (+2.5 Buts)</span> <span class="font-bold text-green-400">✓</span></li>
+                            <li class="flex justify-between"><span>Inter (Victoire)</span> <span class="font-bold text-green-400">✓</span></li>
                         </ul>
                         <div class="pt-4 border-t border-slate-700/50 text-center">
-                            <p class="text-lg font-black text-white uppercase italic tracking-widest">La Base</p>
+                            <p class="text-lg font-black text-white uppercase italic tracking-widest">La Sécurité</p>
                         </div>
                     </div>
                 </div>
@@ -94,16 +93,16 @@
                     <div class="glass h-full rounded-[20px] p-5 flex flex-col">
                         <div class="flex justify-between items-center mb-4 pb-4 border-b border-slate-700/50">
                             <h3 class="font-bold text-blue-400 flex items-center gap-2"><i data-lucide="search" class="w-4 h-4"></i> VALUE</h3>
-                            <span class="text-[9px] bg-blue-900/50 text-blue-300 px-2 py-1 rounded font-bold">ROI+</span>
+                            <span class="text-[9px] bg-blue-900/50 text-blue-300 px-2 py-1 rounded font-bold">Erreurs IA</span>
                         </div>
                         <ul class="space-y-3 text-sm mb-6 flex-1">
-                            <li class="flex justify-between"><span>Sparta (X2)</span> <span class="font-bold text-blue-400">@2.10</span></li>
-                            <li class="flex justify-between"><span>Girona (X2)</span> <span class="font-bold text-blue-400">@1.85</span></li>
-                            <li class="flex justify-between"><span>West Ham (X2)</span> <span class="font-bold text-blue-400">@1.90</span></li>
-                            <li class="flex justify-between"><span>Freiburg</span> <span class="font-bold text-blue-400">@2.05</span></li>
+                            <li class="flex justify-between"><span>Girona (X2)</span> <span class="font-bold text-blue-400">@Value</span></li>
+                            <li class="flex justify-between"><span>PSV Eindhoven</span> <span class="font-bold text-blue-400">@Value</span></li>
+                            <li class="flex justify-between"><span>FC Midtjylland</span> <span class="font-bold text-blue-400">@Value</span></li>
+                            <li class="flex justify-between"><span>St. Gallen (X2)</span> <span class="font-bold text-blue-400">@Value</span></li>
                         </ul>
                         <div class="pt-4 border-t border-slate-700/50 text-center">
-                            <p class="text-lg font-black text-white uppercase italic tracking-widest">L'Audacieux</p>
+                            <p class="text-lg font-black text-white uppercase italic tracking-widest">ROI Maximum</p>
                         </div>
                     </div>
                 </div>
@@ -111,14 +110,14 @@
                 <div class="ticket-gradient-fun rounded-3xl p-1 shadow-lg shadow-orange-900/10">
                     <div class="glass h-full rounded-[20px] p-5 flex flex-col">
                         <div class="flex justify-between items-center mb-4 pb-4 border-b border-slate-700/50">
-                            <h3 class="font-bold text-orange-400 flex items-center gap-2"><i data-lucide="flame" class="w-4 h-4"></i> GOALS</h3>
-                            <span class="text-[9px] bg-orange-900/50 text-orange-300 px-2 py-1 rounded font-bold">FUN</span>
+                            <h3 class="font-bold text-orange-400 flex items-center gap-2"><i data-lucide="flame" class="w-4 h-4"></i> BUTS (BTTS)</h3>
+                            <span class="text-[9px] bg-orange-900/50 text-orange-300 px-2 py-1 rounded font-bold">100% Attaque</span>
                         </div>
                         <ul class="space-y-3 text-sm mb-6 flex-1">
-                            <li class="flex justify-between"><span>Dortmund (+2.5)</span> <span class="font-bold">2.99 xG</span></li>
-                            <li class="flex justify-between"><span>Newcastle (+2.5)</span> <span class="font-bold">2.80 xG</span></li>
-                            <li class="flex justify-between"><span>Barça (+3.5)</span> <span class="font-bold">3.28 xG</span></li>
-                            <li class="flex justify-between"><span>Villa (BTTS)</span> <span class="font-bold">Oui</span></li>
+                            <li class="flex justify-between"><span>Nice vs Monaco</span> <span class="font-bold">Les 2 marquent</span></li>
+                            <li class="flex justify-between"><span>AZ vs Ajax</span> <span class="font-bold">Les 2 marquent</span></li>
+                            <li class="flex justify-between"><span>Servette vs Thun</span> <span class="font-bold">Les 2 marquent</span></li>
+                            <li class="flex justify-between"><span>Liverpool vs City</span> <span class="font-bold">Les 2 marquent</span></li>
                         </ul>
                         <div class="pt-4 border-t border-slate-700/50 text-center">
                             <p class="text-lg font-black text-white uppercase italic tracking-widest">Le Festival</p>
@@ -129,16 +128,19 @@
         </section>
 
         <div class="flex overflow-x-auto no-scrollbar gap-2 md:gap-4 mb-6 border-b border-slate-700/50 pb-0 sticky top-[72px] z-40 bg-[#0f172a]/95 backdrop-blur-md pt-2 -mx-4 px-4 md:mx-0 md:px-0">
-            <button onclick="filterLeague('all')" class="league-tab active pb-3 px-3 text-[10px] md:text-xs font-bold uppercase tracking-widest whitespace-nowrap transition-colors" id="tab-all">Tous</button>
-            <button onclick="filterLeague('ENG')" class="league-tab pb-3 px-3 text-[10px] md:text-xs font-bold uppercase tracking-widest text-slate-500 whitespace-nowrap transition-colors hover:text-slate-300" id="tab-ENG">Angleterre</button>
-            <button onclick="filterLeague('GER')" class="league-tab pb-3 px-3 text-[10px] md:text-xs font-bold uppercase tracking-widest text-slate-500 whitespace-nowrap transition-colors hover:text-slate-300" id="tab-GER">Allemagne</button>
-            <button onclick="filterLeague('SPA')" class="league-tab pb-3 px-3 text-[10px] md:text-xs font-bold uppercase tracking-widest text-slate-500 whitespace-nowrap transition-colors hover:text-slate-300" id="tab-SPA">Espagne</button>
-            <button onclick="filterLeague('ITA')" class="league-tab pb-3 px-3 text-[10px] md:text-xs font-bold uppercase tracking-widest text-slate-500 whitespace-nowrap transition-colors hover:text-slate-300" id="tab-ITA">Italie</button>
-            <button onclick="filterLeague('FRA')" class="league-tab pb-3 px-3 text-[10px] md:text-xs font-bold uppercase tracking-widest text-slate-500 whitespace-nowrap transition-colors hover:text-slate-300" id="tab-FRA">France</button>
-            <button onclick="filterLeague('NED')" class="league-tab pb-3 px-3 text-[10px] md:text-xs font-bold uppercase tracking-widest text-slate-500 whitespace-nowrap transition-colors hover:text-slate-300" id="tab-NED">Pays-Bas</button>
-            <button onclick="filterLeague('POR')" class="league-tab pb-3 px-3 text-[10px] md:text-xs font-bold uppercase tracking-widest text-slate-500 whitespace-nowrap transition-colors hover:text-slate-300" id="tab-POR">Portugal</button>
-            <button onclick="filterLeague('BEL')" class="league-tab pb-3 px-3 text-[10px] md:text-xs font-bold uppercase tracking-widest text-slate-500 whitespace-nowrap transition-colors hover:text-slate-300" id="tab-BEL">Belgique</button>
-            <button onclick="filterLeague('TUR')" class="league-tab pb-3 px-3 text-[10px] md:text-xs font-bold uppercase tracking-widest text-slate-500 whitespace-nowrap transition-colors hover:text-slate-300" id="tab-TUR">Turquie</button>
+            <button onclick="filterLeague('all')" class="league-tab active pb-3 px-3 text-[10px] md:text-xs font-bold uppercase tracking-widest whitespace-nowrap" id="tab-all">Tous</button>
+            <button onclick="filterLeague('ENG')" class="league-tab pb-3 px-3 text-[10px] md:text-xs font-bold uppercase tracking-widest text-slate-500 whitespace-nowrap" id="tab-ENG">Angleterre</button>
+            <button onclick="filterLeague('SPA')" class="league-tab pb-3 px-3 text-[10px] md:text-xs font-bold uppercase tracking-widest text-slate-500 whitespace-nowrap" id="tab-SPA">Espagne</button>
+            <button onclick="filterLeague('GER')" class="league-tab pb-3 px-3 text-[10px] md:text-xs font-bold uppercase tracking-widest text-slate-500 whitespace-nowrap" id="tab-GER">Allemagne</button>
+            <button onclick="filterLeague('ITA')" class="league-tab pb-3 px-3 text-[10px] md:text-xs font-bold uppercase tracking-widest text-slate-500 whitespace-nowrap" id="tab-ITA">Italie</button>
+            <button onclick="filterLeague('FRA')" class="league-tab pb-3 px-3 text-[10px] md:text-xs font-bold uppercase tracking-widest text-slate-500 whitespace-nowrap" id="tab-FRA">France</button>
+            <button onclick="filterLeague('NED')" class="league-tab pb-3 px-3 text-[10px] md:text-xs font-bold uppercase tracking-widest text-slate-500 whitespace-nowrap" id="tab-NED">Pays-Bas</button>
+            <button onclick="filterLeague('TUR')" class="league-tab pb-3 px-3 text-[10px] md:text-xs font-bold uppercase tracking-widest text-slate-500 whitespace-nowrap" id="tab-TUR">Turquie</button>
+            <button onclick="filterLeague('POR')" class="league-tab pb-3 px-3 text-[10px] md:text-xs font-bold uppercase tracking-widest text-slate-500 whitespace-nowrap" id="tab-POR">Portugal</button>
+            <button onclick="filterLeague('BEL')" class="league-tab pb-3 px-3 text-[10px] md:text-xs font-bold uppercase tracking-widest text-slate-500 whitespace-nowrap" id="tab-BEL">Belgique</button>
+            <button onclick="filterLeague('SWI')" class="league-tab pb-3 px-3 text-[10px] md:text-xs font-bold uppercase tracking-widest text-slate-500 whitespace-nowrap" id="tab-SWI">Suisse</button>
+            <button onclick="filterLeague('GRE')" class="league-tab pb-3 px-3 text-[10px] md:text-xs font-bold uppercase tracking-widest text-slate-500 whitespace-nowrap" id="tab-GRE">Grèce</button>
+             <button onclick="filterLeague('DIV')" class="league-tab pb-3 px-3 text-[10px] md:text-xs font-bold uppercase tracking-widest text-slate-500 whitespace-nowrap" id="tab-DIV">Divers</button>
         </div>
 
         <div id="match-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6">
@@ -147,59 +149,89 @@
 
     <script>
         const matches = [
-            // ANGLETERRE (Premier League)
-            { league: 'ENG', home: 'Man United', away: 'Tottenham', bet: 'Victoire Man Utd', prob: '62%', rating: '62/38', color: 'badge-safe', scenario: 'Carrick a relancé United. Spurs défense instable (18 buts encaissés MT1).', trap: 'Le "Under 1.5". Stats prévoient 3.13 buts.', score: '3-1 ou 2-1' },
-            { league: 'ENG', home: 'Arsenal', away: 'Sunderland', bet: 'Arsenal (H-1.0)', prob: '81%', rating: '80/20', color: 'badge-safe', scenario: 'Arsenal injouable à domicile contre promus.', trap: 'Le pari "Plus de 4.5 buts". Sunderland solide.', score: '2-0 ou 3-0' },
-            { league: 'ENG', home: 'Burnley', away: 'West Ham', bet: 'West Ham (X2)', prob: 'Value', rating: '39/61', color: 'badge-warning', scenario: 'West Ham structurellement supérieur (+22 pts).', trap: 'Victoire de Burnley. Trop faibles.', score: '1-2 ou 1-1' },
-            { league: 'ENG', home: 'Wolves', away: 'Chelsea', bet: 'Victoire Chelsea', prob: '60%', rating: '29/71', color: 'badge-safe', scenario: 'Wolves noté 30% partout (Relégation).', trap: 'Double Chance Wolves.', score: '0-2 ou 1-3' },
-            { league: 'ENG', home: 'Bournemouth', away: 'A. Villa', bet: 'BTTS (Oui)', prob: '61%', rating: '38/62', color: 'badge-safe', scenario: 'xG cumulé 2.80. Villa bête noire (85% H2H).', trap: 'Le "Moins de 1.5 Buts". Rythme élevé.', score: '1-2 ou 2-2' },
-            { league: 'ENG', home: 'Newcastle', away: 'Brentford', bet: 'Plus de 2.5 Buts', prob: '56%', rating: '53/48', color: 'badge-warning', scenario: 'Newcastle doit attaquer (xG 1.66).', trap: 'Le "Under 2.5" ou Clean Sheet Newcastle.', score: '2-1 ou 3-1' },
+            // ANGLETERRE
+            { league: 'ENG', home: 'Brighton', away: 'Crystal Palace', bet: 'Brighton (1X) & +1.5', prob: 'Value', rating: '75/25', color: 'badge-warning', scenario: 'Brighton ne perd pas chez lui, mais Palace est la bête noire (H2H 62%).', trap: 'Victoire Sèche de Brighton (Risque Nul élevé).', score: '1-1 ou 2-1' },
+            { league: 'ENG', home: 'Liverpool', away: 'Man City', bet: 'BTTS (Oui)', prob: '65%', rating: '55/45', color: 'badge-safe', scenario: 'Choc des Titans. xG total 3.11. Défense City faible (45%).', trap: 'Victoire City & Clean Sheet (Impossible stats).', score: '2-1 ou 2-2' },
 
-            // ALLEMAGNE (Bundesliga)
-            { league: 'GER', home: 'Wolfsburg', away: 'Dortmund', bet: 'Victoire Dortmund', prob: '58%', rating: '29/71', color: 'badge-safe', scenario: 'Wolfsburg en perdition (29%). Dortmund domine.', trap: 'Wolfsburg ou Nul. Écart de 42 points.', score: '1-3 ou 1-2' },
-            { league: 'GER', home: 'Mainz 05', away: 'Augsburg', bet: 'Victoire Mainz', prob: 'Value', rating: '62/38', color: 'badge-warning', scenario: 'H2H 71% pour Mainz. Augsburg en baisse.', trap: 'Victoire d\'Augsburg.', score: '2-1 ou 2-0' },
-            { league: 'GER', home: 'St. Pauli', away: 'Stuttgart', bet: 'Victoire Stuttgart', prob: '63%', rating: '28/72', color: 'badge-safe', scenario: 'St. Pauli (Forme 14%) vs Stuttgart (Forme 86%).', trap: 'Double Chance St. Pauli.', score: '0-2 ou 0-3' },
-            { league: 'GER', home: 'Freiburg', away: 'Werder', bet: 'Victoire Freiburg', prob: 'Value', rating: '72/28', color: 'badge-safe', scenario: 'Werder 0 victoire. Freiburg forteresse (78%).', trap: 'Double Chance Werder.', score: '2-0 ou 3-1' },
-            { league: 'GER', home: 'Heidenheim', away: 'Hamburg', bet: 'Hamburg (X2)', prob: 'Value', rating: '33/68', color: 'badge-warning', scenario: 'Hamburg solide (69% Def).', trap: 'Victoire Heidenheim.', score: '0-1 ou 1-1' },
-            { league: 'GER', home: 'M\'Gladbach', away: 'Leverkusen', bet: 'Victoire Leverkusen', prob: 'Value', rating: '30/70', color: 'badge-safe', scenario: 'Gladbach défense 38%. Leverkusen domine H2H.', trap: 'Gladbach ou Nul.', score: '1-3 ou 1-2' },
+            // ESPAGNE
+            { league: 'SPA', home: 'Alavés', away: 'Getafe', bet: 'Alavés (1X) & -3.5', prob: '56%', rating: '75/25', color: 'badge-warning', scenario: 'Getafe ne marque pas (Att 33%). Alavés solide mais match fermé.', trap: 'BTTS Oui (Getafe trop faible offensivement).', score: '1-0 ou 0-0' },
+            { league: 'SPA', home: 'Athletic Club', away: 'Levante', bet: 'Victoire Athletic', prob: '61%', rating: '69/32', color: 'badge-safe', scenario: 'San Mamés imprenable (H2H 85%). Levante faible (32%).', trap: 'Levante ou Nul (Suicide financier).', score: '2-0 ou 3-0' },
+            { league: 'SPA', home: 'Sevilla', away: 'Girona', bet: 'Girona (X2)', prob: 'Value', rating: '29/71', color: 'badge-warning', scenario: 'Sevilla surcoté (Forme 29%). Girona bien meilleur (71%).', trap: 'Victoire Sèche Sevilla (Le piège du nom).', score: '1-1 ou 1-2' },
+            { league: 'SPA', home: 'Atlético', away: 'Betis', bet: 'Victoire Atlético', prob: '69%', rating: '74/26', color: 'badge-safe', scenario: 'Betis catastrophique (Att 25%). Atlético forteresse (74%).', trap: 'BTTS Oui (Betis inoffensif).', score: '2-0 ou 3-0' },
+            { league: 'SPA', home: 'Valencia', away: 'Real Madrid', bet: 'Victoire Real Madrid', prob: '63%', rating: '31/69', color: 'badge-safe', scenario: 'Valencia stats de relégable (26%). Real trop fort (71%).', trap: 'Valencia ou Nul (Défense trop faible).', score: '0-2 ou 1-3' },
 
-            // ESPAGNE (La Liga)
-            { league: 'SPA', home: 'Barcelona', away: 'Mallorca', bet: 'Barça (H-1.5)', prob: '86%', rating: '86/14', color: 'badge-safe', scenario: 'Carnage (xG 3.28). Mallorca défense 11%.', trap: 'Le "Under 2.5".', score: '4-0 ou 3-0' },
-            { league: 'SPA', home: 'Sevilla', away: 'Girona', bet: 'Girona (X2)', prob: 'Value', rating: '56/44', color: 'badge-danger', scenario: 'Sevilla forme 29% vs Girona 71%.', trap: 'Victoire Sèche de Séville.', score: '1-1 ou 1-2' },
-            { league: 'SPA', home: 'R. Sociedad', away: 'Elche', bet: 'Victoire R.S.', prob: '80%+', rating: '79/21', color: 'badge-safe', scenario: 'Elche forme 13%. H2H 93% pour la Real.', trap: 'Les Deux Équipes Marquent (BTTS).', score: '2-0 ou 3-0' },
+            // ALLEMAGNE
+            { league: 'GER', home: 'FC Köln', away: 'RB Leipzig', bet: 'Leipzig (X2) & +1.5', prob: 'Value', rating: '36/64', color: 'badge-warning', scenario: 'Leipzig domine H2H (85%). Köln ne marque pas (20%).', trap: 'Victoire Köln (Stats trop faibles).', score: '1-2 ou 0-2' },
+            { league: 'GER', home: 'Bayern', away: 'Hoffenheim', bet: 'Bayern & +2.5 Buts', prob: '95%', rating: '76/25', color: 'badge-safe', scenario: 'Hoffenheim défense 10% vs Bayern Attaque 80%. Massacre.', trap: 'Hoffenheim ou Nul (Leurre de la forme).', score: '4-0 ou 4-1' },
 
-            // ITALIE (Serie A)
-            { league: 'ITA', home: 'Genoa', away: 'Napoli', bet: 'Napoli (X2) & -3.5', prob: '51%', rating: '40/60', color: 'badge-safe', scenario: 'xG Genoa 0.74. Match très fermé.', trap: 'Le "Over 2.5" ou Victoire Genoa.', score: '0-1 ou 0-2' },
-            { league: 'ITA', home: 'Fiorentina', away: 'Torino', bet: 'Victoire Fiorentina', prob: '58%', rating: '65/35', color: 'badge-safe', scenario: 'Viola supérieure structurellement.', trap: 'Victoire du Torino. Stats trop faibles.', score: '2-0 ou 2-1' },
+            // ITALIE
+            { league: 'ITA', home: 'Lecce', away: 'Udinese', bet: 'Udinese (X2) & -3.5', prob: 'Value', rating: '28/72', color: 'badge-warning', scenario: 'Lecce forme 9% vs Udinese 91%. Udinese bête noire (93%).', trap: 'Over 2.5 (Match très fermé prévu).', score: '0-1 ou 0-0' },
+            { league: 'ITA', home: 'Sassuolo', away: 'Inter', bet: 'Victoire Inter', prob: '70%', rating: '25/76', color: 'badge-safe', scenario: 'Sassuolo relégable (25%). Inter champion (76%). Banker.', trap: 'Sassuolo ou Nul (Hérésie statistique).', score: '0-2 ou 0-3' },
+            { league: 'ITA', home: 'Juventus', away: 'Lazio', bet: 'Victoire Juventus', prob: '69%', rating: '62/38', color: 'badge-safe', scenario: 'Lazio inoffensive (Att 23%). Juve gère à domicile.', trap: 'BTTS Oui (Lazio ne marquera pas).', score: '2-0 ou 1-0' },
 
-            // FRANCE (Ligue 1)
-            { league: 'FRA', home: 'Lens', away: 'Rennes', bet: 'Victoire Lens', prob: '58%', rating: '67/33', color: 'badge-safe', scenario: 'Rennes défense 30%. Lens intraitable.', trap: 'Double Chance Rennes.', score: '2-1 ou 3-0' },
-            { league: 'FRA', home: 'Nantes', away: 'Lyon', bet: 'Victoire Lyon', prob: '58%', rating: '22/78', color: 'badge-safe', scenario: 'Nantes en crise (17% forme).', trap: 'Nantes ou Nul. Lyon bête noire.', score: '0-2 ou 1-3' },
+            // FRANCE
+            { league: 'FRA', home: 'Nice', away: 'Monaco', bet: 'BTTS & Over 2.5', prob: '65%', rating: '50/50', color: 'badge-warning', scenario: 'Derby ouvert. Nice défense friable (40%). xG 3.12.', trap: 'Nice Clean Sheet (Impossible vu stats).', score: '1-2 ou 2-2' },
+            { league: 'FRA', home: 'Angers', away: 'Toulouse', bet: 'Toulouse (X2) & -3.5', prob: '47%', rating: '33/67', color: 'badge-warning', scenario: 'Toulouse forme 77%. Angers coule (24%). Match fermé.', trap: 'Over 2.5 (Match tactique prévu).', score: '0-1 ou 0-2' },
+            { league: 'FRA', home: 'Le Havre', away: 'Strasbourg', bet: 'Strasbourg (X2) & -4.5', prob: '53%', rating: '37/63', color: 'badge-safe', scenario: 'Le Havre attaque stérile (37%). Strasbourg en confiance.', trap: 'Victoire Le Havre (Forme trop basse).', score: '1-2 ou 0-2' },
+            { league: 'FRA', home: 'PSG', away: 'Marseille', bet: 'Victoire PSG', prob: '70%', rating: '75/25', color: 'badge-safe', scenario: 'OM défense 12% (Catastrophe). PSG machine (75%).', trap: 'Marseille ou Nul (Suicide au Parc).', score: '3-0 ou 3-1' },
 
-            // PAYS-BAS (Eredivisie)
-            { league: 'NED', home: 'NEC', away: 'Heracles', bet: 'Victoire NEC', prob: '68%', rating: '68/32', color: 'badge-safe', scenario: 'Attaque 76% vs 24%.', trap: 'Victoire ou Nul d\'Heracles.', score: '3-0 ou 2-0' },
-            { league: 'NED', home: 'PEC Zwolle', away: 'Volendam', bet: 'Victoire PEC', prob: '59%', rating: '70/30', color: 'badge-safe', scenario: 'Volendam défense passoire (30%).', trap: 'Victoire de Volendam.', score: '2-1 ou 3-1' },
-            { league: 'NED', home: 'Twente', away: 'Heerenveen', bet: 'Victoire Twente', prob: '52%', rating: '61/39', color: 'badge-safe', scenario: 'Forteresse psychologique (85% H2H).', trap: 'Victoire Heerenveen.', score: '2-1 ou 1-1' },
-            { league: 'NED', home: 'Fortuna', away: 'Sparta', bet: 'Sparta (X2)', prob: 'Value', rating: '32/68', color: 'badge-warning', scenario: 'H2H 85% pour Sparta.', trap: 'Victoire Fortuna.', score: '1-2 ou 1-3' },
+            // PAYS-BAS
+            { league: 'NED', home: 'Utrecht', away: 'Feyenoord', bet: 'Victoire Feyenoord', prob: '54%', rating: '33/67', color: 'badge-safe', scenario: 'Utrecht forme 14% (Crise). Feyenoord supérieur partout.', trap: 'Victoire Utrecht (Impossible vu forme).', score: '1-2 ou 1-3' },
+            { league: 'NED', home: 'AZ Alkmaar', away: 'Ajax', bet: 'BTTS (Oui)', prob: '71%', rating: '39/61', color: 'badge-warning', scenario: 'AZ bête noire de l\'Ajax (H2H 93%). Ajax attaque fort.', trap: 'Ajax Clean Sheet (AZ marque tjs vs Ajax).', score: '2-2 ou 2-1' },
+            { league: 'NED', home: 'GA Eagles', away: 'Telstar', bet: 'Victoire GA Eagles', prob: '57%', rating: '56/44', color: 'badge-safe', scenario: 'Telstar défense 32%. GAE doit se racheter à domicile.', trap: 'Telstar ou Nul (Défense trop faible).', score: '2-1 ou 3-1' },
+            { league: 'NED', home: 'Groningen', away: 'PSV', bet: 'Victoire PSV', prob: 'Value', rating: '31/69', color: 'badge-safe', scenario: 'Erreur de cote IA. PSV Attaque 78% vs Groningen 22%.', trap: 'Groningen ou Nul (Attaque trop faible).', score: '0-2 ou 0-1' },
+            { league: 'NED', home: 'Willem II', away: 'Waalwijk', bet: 'BTTS (Oui)', prob: '65%', rating: '39/61', color: 'badge-warning', scenario: 'Derby. Waalwijk attaque fort (61%), Willem II à domicile.', trap: 'Victoire Sèche Willem II (Attaque faible).', score: '1-1 ou 1-2' },
 
-            // PORTUGAL (Liga Portugal)
-            { league: 'POR', home: 'Moreirense', away: 'Gil Vicente', bet: 'Gil Vicente (X2)', prob: 'Value', rating: '44/56', color: 'badge-warning', scenario: 'xG total 2.02. Match fermé.', trap: 'Le pari "Plus de 2.5 buts".', score: '0-1 ou 1-1' },
-            { league: 'POR', home: 'Estoril', away: 'Tondela', bet: 'Victoire Estoril', prob: '58%', rating: '64/36', color: 'badge-safe', scenario: 'Estoril forme 75% vs Tondela 25%.', trap: 'Victoire de Tondela.', score: '2-0 ou 3-1' },
+            // TURQUIE
+            { league: 'TUR', home: 'Konyaspor', away: 'Göztepe', bet: 'Göztepe (X2) & -3.5', prob: '39%', rating: '50/50', color: 'badge-warning', scenario: 'Göztepe invaincu. Match miroir très serré (xG 2.25).', trap: 'Over 2.5 (Match fermé prévu).', score: '1-1 ou 0-1' },
+            { league: 'TUR', home: 'Rizespor', away: 'Galatasaray', bet: 'Victoire Galatasaray', prob: '64%', rating: '19/81', color: 'badge-safe', scenario: 'Rizespor niveau relégable (19%). Galata champion (81%).', trap: 'Rizespor ou Nul (Aucune chance stats).', score: '1-3 ou 0-3' },
+            { league: 'TUR', home: 'Beşiktaş', away: 'Alanyaspor', bet: 'Victoire Beşiktaş', prob: '67%', rating: '75/25', color: 'badge-safe', scenario: 'Alanya défense 23% (Passoire). Beşiktaş attaque 73%.', trap: 'Alanya ou Nul (H2H trompeur).', score: '3-0 ou 3-1' },
 
-            // TURQUIE (Süper Lig)
-            { league: 'TUR', home: 'Samsunspor', away: 'Trabzon', bet: 'Samsunspor (1X)', prob: '41%', rating: '52/48', color: 'badge-warning', scenario: 'Choc des Invaincus. Avantage Derby.', trap: 'Victoire Sèche de Trabzonspor.', score: '1-1 ou 2-2' },
+            // PORTUGAL
+            { league: 'POR', home: 'Braga', away: 'Rio Ave', bet: 'Victoire Braga', prob: '67%', rating: '73/27', color: 'badge-safe', scenario: 'Rio Ave attaque 17% (Inexistante). Braga déroule.', trap: 'BTTS Oui (Rio Ave ne marquera pas).', score: '2-0 ou 3-0' },
+            { league: 'POR', home: 'Benfica', away: 'Alverca', bet: 'Benfica (H-1.5)', prob: '84%', rating: '81/19', color: 'badge-safe', scenario: 'Alverca défense 7%. Massacre statistique annoncé.', trap: 'BTTS Oui (Alverca xG 0.40).', score: '4-0 ou 3-0' },
 
-            // BELGIQUE (Jupiler Pro League)
-            { league: 'BEL', home: 'Zulte', away: 'Dender', bet: 'Zulte (1X)', prob: 'Value', rating: '57/43', color: 'badge-danger', scenario: 'IA favorise Dender à tort. Zulte H2H 80%.', trap: 'Victoire Sèche de Dender.', score: '1-0 ou 1-1' },
-            { league: 'BEL', home: 'Charleroi', away: 'Cercle', bet: 'Victoire Charleroi', prob: '54%', rating: '67/33', color: 'badge-safe', scenario: 'Charleroi défense 67%. Forme 4-1-0.', trap: 'Victoire Cercle Brugge.', score: '1-0 ou 2-0' },
-            { league: 'BEL', home: 'Gent', away: 'OH Leuven', bet: 'Victoire Gent', prob: '54%', rating: '63/37', color: 'badge-safe', scenario: 'OHL en crise (0 victoire).', trap: 'Victoire d\'OH Leuven.', score: '2-0 ou 2-1' }
+            // BELGIQUE
+            { league: 'BEL', home: 'Genk', away: 'Anderlecht', bet: 'Victoire Genk', prob: '50%', rating: '64/36', color: 'badge-safe', scenario: 'Anderlecht crise (36%). Genk bête noire (H2H 71%).', trap: 'Anderlecht ou Nul (Forme trop basse).', score: '2-1 ou 3-1' },
+            { league: 'BEL', home: 'Union SG', away: 'RAAL', bet: 'Victoire Union SG', prob: '48%', rating: '61/39', color: 'badge-safe', scenario: 'RAAL défense 13% vs Union Défense 87%. Forteresse.', trap: 'Victoire RAAL (Défense trop faible).', score: '1-0 ou 2-0' },
+            { league: 'BEL', home: 'Club Brugge', away: 'Standard', bet: 'Victoire Brugge', prob: '50%', rating: '76/24', color: 'badge-safe', scenario: 'Standard attaque 24% (Inexistante). Brugge 76%.', trap: 'BTTS Oui (Standard ne marque pas).', score: '2-0 ou 1-0' },
+
+            // SUISSE
+            { league: 'SWI', home: 'Servette', away: 'FC Thun', bet: 'Victoire Thun', prob: '64%', rating: '30/70', color: 'badge-warning', scenario: 'Servette en crise (30%). Thun 5 victoires de suite.', trap: 'Victoire Servette (Crise profonde).', score: '1-3 ou 1-2' },
+            { league: 'SWI', home: 'FC Basel', away: 'Zurich', bet: 'Victoire Basel (DNB)', prob: '46%', rating: '69/31', color: 'badge-warning', scenario: 'Zurich 0 victoire (31%). Basel structurellement au dessus.', trap: 'Victoire Zurich (Stats trop faibles).', score: '2-0 ou 2-1' },
+            { league: 'SWI', home: 'Lausanne', away: 'St. Gallen', bet: 'St. Gallen (X2)', prob: 'Value', rating: '40/60', color: 'badge-warning', scenario: 'St Gallen attaque 65% vs Lausanne 35%. Value Bet.', trap: 'Victoire Lausanne (Surcoté domicile).', score: '1-2 ou 1-1' },
+
+            // DANEMARK
+            { league: 'DIV', home: 'Midtjylland', away: 'Copenhagen', bet: 'Victoire Midtjylland', prob: '50%', rating: '63/37', color: 'badge-warning', scenario: 'Copenhague en chute (37%). Midtjylland solide (76%).', trap: 'BTTS Oui (FCK attaque 24%).', score: '2-0 ou 3-0' },
+
+            // REPUBLIQUE TCHEQUE
+            { league: 'DIV', home: 'Hradec', away: 'Dukla Praha', bet: 'Victoire Hradec', prob: '61%', rating: '83/17', color: 'badge-safe', scenario: 'Dukla forme 17% (Perdition). Hradec 83%. Base.', trap: 'BTTS Oui (Dukla inoffensif).', score: '2-0 ou 1-0' },
+            { league: 'DIV', home: 'Zlin', away: 'Sparta Praha', bet: 'Victoire Sparta', prob: '54%', rating: '29/72', color: 'badge-safe', scenario: 'Zlin relégable (29%). Sparta Champion (72%). H2H 93%.', trap: 'Zlin ou Nul (Mismatch total).', score: '1-3 ou 0-2' },
+
+            // GRECE
+            { league: 'GRE', home: 'Panserraikos', away: 'AEK Athens', bet: 'Victoire AEK', prob: '57%', rating: '28/72', color: 'badge-safe', scenario: 'Panserraikos 4 défaites. AEK trop fort (72%).', trap: 'BTTS Oui (Locaux attaque 25%).', score: '0-2 ou 0-3' },
+            { league: 'GRE', home: 'Aris', away: 'PAOK', bet: 'PAOK (DNB)', prob: '59%', rating: '36/64', color: 'badge-safe', scenario: 'Aris attaque 29%. PAOK attaque 71%. Derby déséquilibré.', trap: 'Victoire Aris (Trop faibles).', score: '0-1 ou 0-2' },
+            { league: 'GRE', home: 'OFI Crète', away: 'Levadiakos', bet: 'Levadiakos (X2)', prob: '44%', rating: '41/59', color: 'badge-warning', scenario: 'Levadiakos supérieur (59%) et invaincu. OFI surcoté.', trap: 'Victoire OFI (Bête noire en face).', score: '1-1 ou 0-1' },
+            { league: 'GRE', home: 'Olympiakos', away: 'Panathinaikos', bet: 'Victoire Olympiakos', prob: '59%', rating: '71/30', color: 'badge-safe', scenario: 'Pana défense 25% (Ruine). Olympiakos 71%.', trap: 'Pana ou Nul (Suicide statistique).', score: '2-0 ou 1-0' },
+
+            // CROATIE
+            { league: 'DIV', home: 'Rijeka', away: 'Dinamo Zagreb', bet: 'Dinamo (X2) & -3.5', prob: '41%', rating: '41/59', color: 'badge-warning', scenario: 'Dinamo H2H 71%. Rijeka attaque faible (36%).', trap: 'Victoire Rijeka (Inférieurs).', score: '1-2 ou 0-1' },
+            { league: 'DIV', home: 'Varazdin', away: 'Osijek', bet: 'Victoire Varazdin', prob: '55%', rating: '66/34', color: 'badge-safe', scenario: 'Osijek attaque 25%. Varazdin forme étincelante.', trap: 'BTTS Oui (Osijek stérile).', score: '1-0 ou 2-0' }
         ];
 
         function renderMatches(filter = 'all') {
             const grid = document.getElementById('match-grid');
             grid.innerHTML = '';
             
-            const filtered = filter === 'all' ? matches : matches.filter(m => m.league === filter);
+            // Logique de filtre pour les ligues "DIV" (Divers) qui regroupe DEN, CRO, CZE
+            let filtered = [];
+            if (filter === 'all') {
+                filtered = matches;
+            } else if (filter === 'DIV') {
+                filtered = matches.filter(m => ['DIV', 'DEN', 'CRO', 'CZE'].includes(m.league));
+            } else {
+                filtered = matches.filter(m => m.league === filter);
+            }
             
             filtered.forEach(match => {
                 const matchCard = `
@@ -237,12 +269,7 @@
                             </div>
                         </div>
 
-                        <div class="flex items-start gap-2 pt-3 border-t border-slate-800 mb-3">
-                            <i data-lucide="brain" class="w-4 h-4 text-slate-600 mt-0.5 shrink-0"></i>
-                            <p class="text-[10px] md:text-[11px] text-slate-400 leading-tight">${match.scenario}</p>
-                        </div>
-
-                        <div class="grid grid-cols-2 gap-2">
+                        <div class="grid grid-cols-2 gap-2 mt-auto">
                             <div class="bg-red-900/10 border border-red-900/30 rounded-xl p-2 transition-colors hover:bg-red-900/20">
                                 <div class="flex items-center gap-1 mb-1 text-red-400">
                                     <i data-lucide="alert-triangle" class="w-3 h-3"></i>
@@ -269,11 +296,11 @@
                 tab.classList.add('text-slate-500');
             });
             const activeTab = document.getElementById(`tab-${league}`);
-            activeTab.classList.add('active', 'text-blue-400');
-            activeTab.classList.remove('text-slate-500');
-            
-            // Scroll automatique pour centrer l'onglet sur mobile
-            activeTab.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+            if(activeTab) {
+                activeTab.classList.add('active', 'text-blue-400');
+                activeTab.classList.remove('text-slate-500');
+                activeTab.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+            }
             
             renderMatches(league);
         }
