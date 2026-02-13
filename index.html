@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Betting Élite - Dashboard Analyse</title>
+    <title>Betting Élite - Dashboard 13/02/2026</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
     <style>
@@ -12,13 +12,12 @@
         .glass { background: rgba(30, 41, 59, 0.7); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); }
         .card-gradient { background: linear-gradient(135deg, rgba(30, 41, 59, 1) 0%, rgba(15, 23, 42, 1) 100%); }
         
-        /* Gradients spécifiques pour les volets */
         .volet-banker { background: linear-gradient(180deg, rgba(6, 78, 59, 0.2) 0%, rgba(15, 23, 42, 0) 100%); border-top: 4px solid #4ade80; }
         .volet-value { background: linear-gradient(180deg, rgba(30, 58, 138, 0.2) 0%, rgba(15, 23, 42, 0) 100%); border-top: 4px solid #60a5fa; }
         .volet-trap { background: linear-gradient(180deg, rgba(127, 29, 29, 0.2) 0%, rgba(15, 23, 42, 0) 100%); border-top: 4px solid #f87171; }
 
         .ticket-gradient-safe { background: linear-gradient(135deg, rgba(6, 78, 59, 0.4) 0%, rgba(2, 44, 34, 0.6) 100%); border: 1px solid rgba(52, 211, 153, 0.2); }
-        .ticket-gradient-value { background: linear-gradient(135deg, rgba(30, 58, 138, 0.4) 0%, rgba(23, 37, 84, 0.6) 100%); border: 1px solid rgba(96, 165, 250, 0.2); }
+        .ticket-gradient-value { background: linear-gradient(135deg, rgba(30, 58, 138, 0.4) 0%, rgba(2, 44, 34, 0.6) 100%); border: 1px solid rgba(96, 165, 250, 0.2); }
         .ticket-gradient-fun { background: linear-gradient(135deg, rgba(124, 45, 18, 0.4) 0%, rgba(67, 20, 7, 0.6) 100%); border: 1px solid rgba(251, 146, 60, 0.2); }
         
         .badge-safe { background-color: rgba(34, 197, 94, 0.15); color: #4ade80; border: 1px solid rgba(34, 197, 94, 0.3); }
@@ -37,12 +36,12 @@
             <div class="bg-blue-600 p-2 rounded-lg shadow-lg shadow-blue-900/50">
                 <i data-lucide="layout-template" class="text-white"></i>
             </div>
-            <h1 class="text-xl font-bold tracking-tight uppercase">Betting <span class="text-blue-500">Élite</span> <span class="text-xs font-normal text-slate-500 ml-2">12/02/2026</span></h1>
+            <h1 class="text-xl font-bold tracking-tight uppercase">Betting <span class="text-blue-500">Élite</span> <span class="text-xs font-normal text-slate-500 ml-2">Vendredi 13 Fév. 2026</span></h1>
         </div>
         <div class="hidden md:flex items-center gap-6 text-sm font-medium text-slate-400">
             <span class="flex items-center gap-2 px-3 py-1 bg-green-900/30 text-green-400 rounded-full border border-green-700/50">
                 <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
-                Système Prêt
+                Analyses Finalisées
             </span>
         </div>
     </header>
@@ -50,440 +49,79 @@
     <main class="max-w-7xl mx-auto px-4 md:px-6">
         
         <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
-            <div class="glass p-5 rounded-2xl">
-                <p class="text-slate-400 text-[10px] font-bold uppercase tracking-widest mb-1">Matchs Analysés</p>
-                <h3 class="text-2xl font-black">18</h3>
+            <div class="glass p-5 rounded-2xl text-center">
+                <p class="text-slate-400 text-[10px] font-bold uppercase tracking-widest mb-1">Matchs</p>
+                <h3 class="text-2xl font-black">28</h3>
             </div>
-            <div class="glass p-5 rounded-2xl border-l-4 border-yellow-500">
+            <div class="glass p-5 rounded-2xl border-l-4 border-yellow-500 text-center">
                 <p class="text-slate-400 text-[10px] font-bold uppercase tracking-widest mb-1">Top Value</p>
-                <h3 class="text-2xl font-black text-yellow-400">4</h3>
+                <h3 class="text-2xl font-black text-yellow-400">5</h3>
             </div>
-            <div class="glass p-5 rounded-2xl border-l-4 border-green-500">
+            <div class="glass p-5 rounded-2xl border-l-4 border-green-500 text-center">
                 <p class="text-slate-400 text-[10px] font-bold uppercase tracking-widest mb-1">Banker Sûr</p>
-                <h3 class="text-2xl font-black text-green-400">5</h3>
+                <h3 class="text-2xl font-black text-green-400">7</h3>
             </div>
-            <div class="glass p-5 rounded-2xl border-l-4 border-red-500">
-                <p class="text-slate-400 text-[10px] font-bold uppercase tracking-widest mb-1">Pièges Détectés</p>
-                <h3 class="text-2xl font-black text-red-400">3</h3>
+            <div class="glass p-5 rounded-2xl border-l-4 border-red-500 text-center">
+                <p class="text-slate-400 text-[10px] font-bold uppercase tracking-widest mb-1">Pièges</p>
+                <h3 class="text-2xl font-black text-red-400">4</h3>
             </div>
         </div>
 
         <section class="mb-12">
-            <h2 class="text-lg font-bold mb-4 flex items-center gap-2 text-slate-100">
-                <i data-lucide="layout-list" class="text-blue-500"></i> Tickets Recommandés
-            </h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div class="ticket-gradient-safe rounded-3xl p-1">
-                    <div class="glass h-full rounded-[20px] p-5 flex flex-col">
-                        <div class="flex justify-between items-center mb-4 pb-4 border-b border-slate-700/50">
-                            <h3 class="font-bold text-green-400 flex items-center gap-2"><i data-lucide="lock"></i> LE BET BÉTON</h3>
-                            <span class="text-[10px] bg-green-900/50 text-green-300 px-2 py-1 rounded">FIABILITÉ 10/10</span>
-                        </div>
-                        <ul class="space-y-3 text-sm mb-6 flex-1">
-                            <li class="flex justify-between items-center border-b border-slate-700/30 pb-2">
-                                <span class="text-white font-medium">Lincoln Red Imps</span>
-                                <span class="text-green-400 font-bold">Victoire</span>
-                            </li>
-                            <li class="flex justify-between items-center border-b border-slate-700/30 pb-2">
-                                <span class="text-white font-medium">Arsenal</span>
-                                <span class="text-green-400 font-bold">Victoire</span>
-                            </li>
-                            <li class="flex justify-between items-center border-b border-slate-700/30 pb-2">
-                                <span class="text-white font-medium">Al-Qadisiyah FC</span>
-                                <span class="text-green-400 font-bold">Victoire</span>
-                            </li>
-                            <li class="flex justify-between items-center pb-2">
-                                <span class="text-white font-medium">Al Taawon</span>
-                                <span class="text-green-400 font-bold">Victoire ou Nul</span>
-                            </li>
-                        </ul>
-                        <div class="pt-4 border-t border-slate-700/50 text-center">
-                            <p class="text-xl font-black text-white uppercase italic">Sécurité Max</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="ticket-gradient-value rounded-3xl p-1">
-                    <div class="glass h-full rounded-[20px] p-5 flex flex-col">
-                        <div class="flex justify-between items-center mb-4 pb-4 border-b border-slate-700/50">
-                            <h3 class="font-bold text-blue-400 flex items-center gap-2"><i data-lucide="search"></i> VALUE BETS</h3>
-                            <span class="text-[10px] bg-blue-900/50 text-blue-300 px-2 py-1 rounded">CONTRE L'IA</span>
-                        </div>
-                        <ul class="space-y-3 text-sm mb-6 flex-1">
-                            <li class="flex justify-between items-center border-b border-slate-700/30 pb-2">
-                                <span class="text-white font-medium">FH Hafnarfjordur</span>
-                                <span class="text-blue-400 font-bold">Victoire</span>
-                            </li>
-                            <li class="flex justify-between items-center border-b border-slate-700/30 pb-2">
-                                <span class="text-white font-medium">FC Midtjylland</span>
-                                <span class="text-blue-400 font-bold">Nul ou Victoire</span>
-                            </li>
-                            <li class="flex justify-between items-center border-b border-slate-700/30 pb-2">
-                                <span class="text-white font-medium">Arnett Gardens</span>
-                                <span class="text-blue-400 font-bold">DNB</span>
-                            </li>
-                            <li class="flex justify-between items-center pb-2">
-                                <span class="text-white font-medium">Botev Plovdiv</span>
-                                <span class="text-blue-400 font-bold">Qualification</span>
-                            </li>
-                        </ul>
-                        <div class="pt-4 border-t border-slate-700/50 text-center">
-                            <p class="text-xl font-black text-white uppercase italic">Gros Gains</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="ticket-gradient-fun rounded-3xl p-1">
-                    <div class="glass h-full rounded-[20px] p-5 flex flex-col">
-                        <div class="flex justify-between items-center mb-4 pb-4 border-b border-slate-700/50">
-                            <h3 class="font-bold text-orange-400 flex items-center gap-2"><i data-lucide="flame"></i> SCORING</h3>
-                            <span class="text-[10px] bg-orange-900/50 text-orange-300 px-2 py-1 rounded">BUTS & OVER</span>
-                        </div>
-                        <ul class="space-y-3 text-sm mb-6 flex-1">
-                            <li class="flex justify-between items-center border-b border-slate-700/30 pb-2">
-                                <span class="text-white font-medium">Atlético vs Barça</span>
-                                <span class="text-orange-400 font-bold">Les 2 Marquent</span>
-                            </li>
-                            <li class="flex justify-between items-center border-b border-slate-700/30 pb-2">
-                                <span class="text-white font-medium">FC Thun</span>
-                                <span class="text-orange-400 font-bold">+2.5 Buts</span>
-                            </li>
-                            <li class="flex justify-between items-center border-b border-slate-700/30 pb-2">
-                                <span class="text-white font-medium">FH Hafnarfjordur</span>
-                                <span class="text-orange-400 font-bold">+1.5 Buts Team</span>
-                            </li>
-                            <li class="flex justify-between items-center pb-2">
-                                <span class="text-white font-medium">Aarhus vs Midtjylland</span>
-                                <span class="text-orange-400 font-bold">Les 2 Marquent</span>
-                            </li>
-                        </ul>
-                        <div class="pt-4 border-t border-slate-700/50 text-center">
-                            <p class="text-xl font-black text-white uppercase italic">Festival</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="mb-12">
-            <h2 class="text-lg font-bold mb-4 flex items-center gap-2 text-slate-100">
-                <i data-lucide="bar-chart-2" class="text-blue-500"></i> Synthèse Rapide
-            </h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                 
                 <div class="volet-banker glass rounded-2xl p-6">
                     <div class="flex items-center gap-3 mb-4">
-                        <div class="p-2 bg-green-900/50 rounded-lg text-green-400">
-                            <i data-lucide="shield-check"></i>
-                        </div>
+                        <div class="p-2 bg-green-900/50 rounded-lg text-green-400"><i data-lucide="shield-check"></i></div>
                         <h3 class="font-bold text-green-400 uppercase tracking-wider">Banker Sûr</h3>
                     </div>
-                    <div id="banker-list" class="space-y-3">
-                        </div>
+                    <div id="banker-list" class="space-y-3"></div>
                 </div>
 
                 <div class="volet-value glass rounded-2xl p-6">
                     <div class="flex items-center gap-3 mb-4">
-                        <div class="p-2 bg-blue-900/50 rounded-lg text-blue-400">
-                            <i data-lucide="gem"></i>
-                        </div>
+                        <div class="p-2 bg-blue-900/50 rounded-lg text-blue-400"><i data-lucide="gem"></i></div>
                         <h3 class="font-bold text-blue-400 uppercase tracking-wider">Top Value</h3>
                     </div>
-                    <div id="value-list" class="space-y-3">
-                        </div>
+                    <div id="value-list" class="space-y-3"></div>
                 </div>
 
                 <div class="volet-trap glass rounded-2xl p-6">
                     <div class="flex items-center gap-3 mb-4">
-                        <div class="p-2 bg-red-900/50 rounded-lg text-red-400">
-                            <i data-lucide="alert-octagon"></i>
-                        </div>
+                        <div class="p-2 bg-red-900/50 rounded-lg text-red-400"><i data-lucide="alert-octagon"></i></div>
                         <h3 class="font-bold text-red-400 uppercase tracking-wider">Pièges Détectés</h3>
                     </div>
-                    <div id="trap-list" class="space-y-3">
-                        </div>
+                    <div id="trap-list" class="space-y-3"></div>
                 </div>
-
             </div>
         </section>
 
         <div class="flex overflow-x-auto no-scrollbar gap-4 mb-6 border-b border-slate-700/50 pb-2 sticky top-20 z-40 bg-[#0f172a]/95 pt-2">
             <button onclick="filterLeague('all')" class="league-tab active pb-3 px-4 text-xs font-bold uppercase tracking-widest whitespace-nowrap" id="tab-all">Tous</button>
-            <button onclick="filterLeague('ENG')" class="league-tab pb-3 px-4 text-xs font-bold uppercase tracking-widest text-slate-500 whitespace-nowrap" id="tab-ENG">Angleterre</button>
-            <button onclick="filterLeague('SPA')" class="league-tab pb-3 px-4 text-xs font-bold uppercase tracking-widest text-slate-500 whitespace-nowrap" id="tab-SPA">Espagne</button>
-            <button onclick="filterLeague('SAU')" class="league-tab pb-3 px-4 text-xs font-bold uppercase tracking-widest text-slate-500 whitespace-nowrap" id="tab-SAU">Arabie Saoudite</button>
-            <button onclick="filterLeague('SUI')" class="league-tab pb-3 px-4 text-xs font-bold uppercase tracking-widest text-slate-500 whitespace-nowrap" id="tab-SUI">Suisse</button>
-            <button onclick="filterLeague('BEL')" class="league-tab pb-3 px-4 text-xs font-bold uppercase tracking-widest text-slate-500 whitespace-nowrap" id="tab-BEL">Belgique</button>
+            <button onclick="filterLeague('FRA')" class="league-tab pb-3 px-4 text-xs font-bold uppercase tracking-widest text-slate-500 whitespace-nowrap" id="tab-FRA">France</button>
+            <button onclick="filterLeague('GER')" class="league-tab pb-3 px-4 text-xs font-bold uppercase tracking-widest text-slate-500 whitespace-nowrap" id="tab-GER">Allemagne</button>
             <button onclick="filterLeague('NED')" class="league-tab pb-3 px-4 text-xs font-bold uppercase tracking-widest text-slate-500 whitespace-nowrap" id="tab-NED">Pays-Bas</button>
-            <button onclick="filterLeague('AUTRE')" class="league-tab pb-3 px-4 text-xs font-bold uppercase tracking-widest text-slate-500 whitespace-nowrap" id="tab-AUTRE">Reste du Monde</button>
+            <button onclick="filterLeague('TUR')" class="league-tab pb-3 px-4 text-xs font-bold uppercase tracking-widest text-slate-500 whitespace-nowrap" id="tab-TUR">Turquie</button>
+            <button onclick="filterLeague('SAU')" class="league-tab pb-3 px-4 text-xs font-bold uppercase tracking-widest text-slate-500 whitespace-nowrap" id="tab-SAU">Arabie Saoudite</button>
+            <button onclick="filterLeague('AUTRE')" class="league-tab pb-3 px-4 text-xs font-bold uppercase tracking-widest text-slate-500 whitespace-nowrap" id="tab-AUTRE">Autres</button>
         </div>
 
-        <div id="match-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div class="col-span-full text-center py-10 text-slate-500 italic">
-                Chargement des analyses...
-            </div>
-        </div>
+        <div id="match-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
     </main>
 
     <script>
-        // DONNÉES AVEC PAYS CORRIGÉS ET CATÉGORIES
-        // Category: 1 = Banker, 2 = Value, 3 = Trap, 0 = Normal
         const matches = [
-            {
-                league: 'ENG',
-                country: 'ANGLETERRE',
-                home: 'Brentford',
-                away: 'Arsenal',
-                bet: 'Victoire Arsenal',
-                prob: '85%',
-                rating: '28/72',
-                color: 'badge-safe',
-                scenario: 'Hégémonie totale (H2H 93%).',
-                trap: 'Match Nul ou Victoire Brentford',
-                score: '0-2 ou 1-2',
-                logic: 'Arsenal est trop fort pour Brentford qui a une défense en carton.',
-                category: 1
-            },
-            {
-                league: 'SPA',
-                country: 'ESPAGNE',
-                home: 'Atlético Madrid',
-                away: 'FC Barcelona',
-                bet: 'Les Deux Équipes Marquent',
-                prob: '45%',
-                rating: '48/68',
-                color: 'badge-warning',
-                scenario: 'Choc offensif. Match ouvert.',
-                trap: 'Moins de 1.5 Buts',
-                score: '1-2 ou 2-2',
-                logic: 'L\'Atlético encaisse (43%) mais marque chez lui.',
-                category: 0
-            },
-            {
-                league: 'SAU',
-                country: 'ARABIE SAOUDITE',
-                home: 'Damac',
-                away: 'Al Taawon',
-                bet: 'Victoire Al Taawon',
-                prob: '53%',
-                rating: '24/76',
-                color: 'badge-safe',
-                scenario: 'Mismatch total.',
-                trap: 'Double Chance Damac ou Nul',
-                score: '0-2 ou 1-3',
-                logic: 'Damac est en crise (0 victoires/5).',
-                category: 1
-            },
-            {
-                league: 'SAU',
-                country: 'ARABIE SAOUDITE',
-                home: 'Al-Hazm',
-                away: 'Al Okhdood',
-                bet: 'Al-Hazm ou Nul & -3.5 Buts',
-                prob: '51%',
-                rating: '63/37',
-                color: 'badge-warning',
-                scenario: 'Duel de la peur.',
-                trap: 'Plus de 2.5 Buts',
-                score: '1-0 ou 2-0',
-                logic: 'Al-Hazm est plus solide. Al Okhdood a une attaque anémique.',
-                category: 0
-            },
-            {
-                league: 'SAU',
-                country: 'ARABIE SAOUDITE',
-                home: 'Al-Qadisiyah FC',
-                away: 'NEOM',
-                bet: 'Victoire Al-Qadisiyah',
-                prob: '70%+',
-                rating: '68/32',
-                color: 'badge-safe',
-                scenario: 'Forteresse à domicile.',
-                trap: 'Victoire NEOM',
-                score: '3-1 ou 2-1',
-                logic: 'H2H de 88% pour les locaux. L\'écart de classe est immense.',
-                category: 1
-            },
-            {
-                league: 'BEL',
-                country: 'BELGIQUE',
-                home: 'Royal Antwerp',
-                away: 'RSC Anderlecht',
-                bet: 'Victoire Antwerp (DNB)',
-                prob: '53%',
-                rating: '54/46',
-                color: 'badge-warning',
-                scenario: 'Anderlecht en perdition.',
-                trap: 'Victoire Anderlecht Sec',
-                score: '2-1 ou 3-1',
-                logic: 'Forme Anderlecht 14% vs Antwerp 86%.',
-                category: 0
-            },
-            {
-                league: 'NED',
-                country: 'PAYS-BAS',
-                home: 'FC Den Bosch',
-                away: 'FC Eindhoven',
-                bet: 'FC Eindhoven ou Nul (X2)',
-                prob: '49%',
-                rating: '35/65',
-                color: 'badge-warning',
-                scenario: 'Eindhoven est supérieur.',
-                trap: 'Victoire Den Bosch',
-                score: '0-1 ou 0-2',
-                logic: 'Den Bosch ne gagne plus. Eindhoven est leur bête noire.',
-                category: 0
-            },
-            {
-                league: 'SUI',
-                country: 'SUISSE',
-                home: 'FC Sion',
-                away: 'FC Bâle',
-                bet: 'Match Nul ou Bâle (X2)',
-                prob: '39%/39%',
-                rating: '38/62',
-                color: 'badge-warning',
-                scenario: 'Match fermé, verrouillé.',
-                trap: 'Victoire Sion',
-                score: '1-1 ou 0-1',
-                logic: 'Sion est le roi du nul. Bâle ne perd jamais contre Sion.',
-                category: 0
-            },
-            {
-                league: 'SUI',
-                country: 'SUISSE',
-                home: 'FC Thun',
-                away: 'Lausanne-Sport',
-                bet: 'Victoire FC Thun',
-                prob: '58%',
-                rating: '100/35',
-                color: 'badge-safe',
-                scenario: 'Thun marche sur l\'eau.',
-                trap: 'Under 1.5 Buts',
-                score: '2-1 ou 3-1',
-                logic: 'Thun a une forme de 100% et une attaque de feu (70%).',
-                category: 1
-            },
-            {
-                league: 'AUTRE',
-                country: 'BULGARIE',
-                home: 'Lokomotiv Plovdiv',
-                away: 'Botev Plovdiv',
-                bet: 'Qualif Botev Plovdiv',
-                prob: '45%',
-                rating: '32/68',
-                color: 'badge-danger',
-                scenario: '⚠️ FAUX FAVORI',
-                trap: 'Victoire Lokomotiv',
-                score: '0-1 ou 0-0',
-                logic: 'Lokomotiv a une défense passoire (12%) vs Botev (88%).',
-                category: 3
-            },
-            {
-                league: 'AUTRE',
-                country: 'DANEMARK',
-                home: 'Aarhus (AGF)',
-                away: 'FC Midtjylland',
-                bet: 'Midtjylland ou Nul (X2)',
-                prob: '54%',
-                rating: '39/61',
-                color: 'badge-danger',
-                scenario: '⚠️ ANOMALIE',
-                trap: 'Victoire Aarhus Sec',
-                score: '1-2 ou 2-2',
-                logic: 'Aarhus est en surrégime. Midtjylland est plus fort (Rating 61%).',
-                category: 2
-            },
-            {
-                league: 'AUTRE',
-                country: 'GIBRALTAR',
-                home: 'Europa FC',
-                away: 'Lincoln Red Imps',
-                bet: 'Victoire Lincoln',
-                prob: '90%+',
-                rating: '28/72',
-                color: 'badge-safe',
-                scenario: 'Banker absolu.',
-                trap: 'Tout autre résultat',
-                score: '0-2 ou 0-3',
-                logic: 'H2H 93%. Qualité technique bien supérieure pour Lincoln.',
-                category: 1
-            },
-            {
-                league: 'AUTRE',
-                country: 'ISLANDE',
-                home: 'FH Hafnarfjordur',
-                away: 'IBV',
-                bet: 'Victoire FH Hafnarfjordur',
-                prob: '40%',
-                rating: '62/39',
-                color: 'badge-danger',
-                scenario: '🚨 BUG ALGORITHMIQUE',
-                trap: 'Suivre la proba IA (IBV)',
-                score: '3-0 ou 4-0',
-                logic: 'FH a une défense de 88% contre 12% pour IBV. Value immense.',
-                category: 2
-            },
-            {
-                league: 'AUTRE',
-                country: 'JAMAÏQUE',
-                home: 'Dunbeholden FC',
-                away: 'Arnett Gardens',
-                bet: 'Arnett Gardens (DNB)',
-                prob: '40%',
-                rating: '29/71',
-                color: 'badge-warning',
-                scenario: 'Bête noire (H2H 90%).',
-                trap: 'Victoire Dunbeholden',
-                score: '0-1 ou 1-2',
-                logic: 'Dunbeholden a une défense à 30%. Arnett est plus solide.',
-                category: 2
-            },
-            {
-                league: 'AUTRE',
-                country: 'MACÉDOINE',
-                home: 'Akademija Pandev',
-                away: 'Makedonija GJP',
-                bet: 'Akademija Pandev (DNB)',
-                prob: '46%',
-                rating: '56/44',
-                color: 'badge-warning',
-                scenario: 'Match fermé.',
-                trap: 'Plus de 2.5 Buts',
-                score: '1-0 ou 0-0',
-                logic: 'Makedonija ne gagne plus (Forme 38%).',
-                category: 0
-            },
-            {
-                league: 'AUTRE',
-                country: 'MACÉDOINE',
-                home: 'Pelister',
-                away: 'FK Rabotnicki',
-                bet: 'Victoire Rabotnicki',
-                prob: '59%',
-                rating: '62/38',
-                color: 'badge-safe',
-                scenario: 'Logique pure.',
-                trap: 'Victoire Pelister',
-                score: '0-1 ou 0-2',
-                logic: 'Pelister est au fond du trou (10% forme).',
-                category: 0
-            },
-            {
-                league: 'AUTRE',
-                country: 'TANZANIE',
-                home: 'Dodoma Jiji',
-                away: 'Tabora United',
-                bet: 'Victoire Dodoma Jiji',
-                prob: '55%',
-                rating: '59/41',
-                color: 'badge-safe',
-                scenario: 'Forteresse à domicile.',
-                trap: 'Plus de 2.5 Buts',
-                score: '1-0',
-                logic: 'Dodoma forme 88%. Tabora en crise (13%).',
-                category: 1
-            }
+            { country: 'ALLEMAGNE', home: 'Dortmund', away: 'Mayence', bet: 'Victoire Dortmund & +1.5', prob: '63%', rating: '74/43', color: 'badge-safe', scenario: 'Mayence en surrégime.', trap: 'Victoire Mayence', score: '3-1', logic: 'Défense Mayence (26%) trop faible.', category: 1, league: 'GER' },
+            { country: 'FRANCE', home: 'Rennes', away: 'PSG', bet: 'Victoire PSG & +2.5', prob: '69%', rating: '13/87', color: 'badge-safe', scenario: 'Massacre statistique.', trap: 'Victoire Rennes', score: '0-3', logic: 'Défense Rennes (7%) inexistante.', category: 1, league: 'FRA' },
+            { country: 'TURQUIE', home: 'Galatasaray', away: 'Eyüpspor', bet: 'Victoire Galatasaray', prob: '89%', rating: '86/14', color: 'badge-safe', scenario: 'Argent "gratuit".', trap: 'Exploit Eyüpspor', score: '4-0', logic: 'Mésentente totale de niveau.', category: 1, league: 'TUR' },
+            { country: 'DANEMARK', home: 'Randers FC', away: 'Vejle BK', bet: 'Victoire Randers', prob: '54%', rating: '67/33', color: 'badge-safe', scenario: 'H2H 93% Historique.', trap: 'But de Vejle', score: '2-0', logic: 'Défense Vejle (25%) aux abois.', category: 1, league: 'AUTRE' },
+            { country: 'PAYS-BAS', home: 'ADO Den Haag', away: 'MVV', bet: 'ADO ou Nul (1X)', prob: '23%', rating: '60/40', color: 'badge-warning', scenario: 'Value historique énorme.', trap: 'Victoire MVV', score: '2-1', logic: 'H2H 93% pour ADO ignoré par le marché.', category: 2, league: 'NED' },
+            { country: 'PORTUGAL', home: 'Alverca', away: 'Tondela', bet: 'Double Chance X2', prob: '33%', rating: '66/35', color: 'badge-warning', scenario: 'Bête noire (H2H 87%).', trap: 'Victoire Tondela', score: '0-1', logic: 'Tondela en chute libre (Forme 22%).', category: 2, league: 'AUTRE' },
+            { country: 'POLOGNE', home: 'Katowice', away: 'Legia Varsovie', bet: '1X (DNB 1)', prob: '59%', rating: '58/43', color: 'badge-warning', scenario: 'Legia en crise totale.', trap: 'Victoire Legia', score: '1-0', logic: 'Katowice reste sur 4 victoires.', category: 2, league: 'AUTRE' },
+            { country: 'FRANCE', home: 'Laval', away: 'Annecy', bet: 'Double Chance X2', prob: '41%', rating: '34/66', color: 'badge-safe', scenario: 'Annecy rouleau compresseur.', trap: 'Victoire Laval', score: '0-1', logic: 'Laval crise de confiance (17%).', category: 1, league: 'FRA' },
+            { country: 'ARABIE SAOUDITE', home: 'Al-Hilal', away: 'Al-Ettifaq', bet: 'Victoire Al-Hilal', prob: '70%', rating: '70/30', color: 'badge-safe', scenario: 'Complexé historique.', trap: 'Pari sur le nul', score: '2-0', logic: 'Ettifaq inoffensif (28% attaque).', category: 1, league: 'SAU' },
+            { country: 'FRANCE', home: 'Clermont', away: 'Rodez', bet: 'Double Chance X2', prob: '58%', rating: '44/56', color: 'badge-danger', scenario: 'Piège de la bête noire.', trap: 'Historique Clermont', score: '1-1', logic: 'Rodez invaincu mais Clermont gagne historiquement.', category: 3, league: 'FRA' },
+            { country: 'PAYS-BAS', home: 'Jong PSV', away: 'Graafschap', bet: 'BTTS (Les 2 marquent)', prob: '72%', rating: '65/56', color: 'badge-warning', scenario: 'Spectacle garanti.', trap: 'Under 2.5 buts', score: '2-2', logic: 'Jong PSV attaque fort, défend mal.', category: 0, league: 'NED' }
         ];
 
         function renderSpecialLists() {
@@ -491,121 +129,74 @@
             const valueContainer = document.getElementById('value-list');
             const trapContainer = document.getElementById('trap-list');
 
-            // Filtrer les données
-            const bankers = matches.filter(m => m.category === 1);
-            const values = matches.filter(m => m.category === 2);
-            const traps = matches.filter(m => m.category === 3);
-
-            const createMiniCard = (match, colorClass) => `
-                <div class="flex items-center justify-between bg-slate-800/50 p-3 rounded-xl border border-slate-700/50 hover:bg-slate-800 transition-colors">
+            const createMiniCard = (m, color) => `
+                <div class="bg-slate-800/50 p-3 rounded-xl border border-slate-700/50 flex justify-between items-center">
                     <div>
-                        <div class="text-[10px] font-bold text-slate-500 uppercase">${match.country}</div>
-                        <div class="font-bold text-sm text-slate-200">${match.home}</div>
-                        <div class="text-[11px] ${colorClass}">${match.bet}</div>
+                        <div class="text-[9px] text-slate-500 font-bold uppercase">${m.country}</div>
+                        <div class="font-bold text-xs text-slate-200">${m.home}</div>
+                        <div class="text-[10px] ${color}">${m.bet}</div>
                     </div>
-                    <div class="text-right">
-                        <span class="text-[10px] bg-slate-900 px-2 py-1 rounded text-slate-400 font-mono">${match.prob}</span>
-                    </div>
-                </div>
-            `;
+                    <div class="text-right"><span class="text-[10px] bg-slate-900 px-2 py-1 rounded text-slate-400 font-mono">${m.prob}</span></div>
+                </div>`;
 
-            bankerContainer.innerHTML = bankers.map(m => createMiniCard(m, 'text-green-400')).join('');
-            valueContainer.innerHTML = values.map(m => createMiniCard(m, 'text-blue-400')).join('');
-            trapContainer.innerHTML = traps.map(m => createMiniCard(m, 'text-red-400')).join('');
+            bankerContainer.innerHTML = matches.filter(m => m.category === 1).map(m => createMiniCard(m, 'text-green-400')).join('');
+            valueContainer.innerHTML = matches.filter(m => m.category === 2).map(m => createMiniCard(m, 'text-blue-400')).join('');
+            trapContainer.innerHTML = matches.filter(m => m.category === 3).map(m => createMiniCard(m, 'text-red-400')).join('');
         }
 
         function renderMatches(filter = 'all') {
             const grid = document.getElementById('match-grid');
             grid.innerHTML = '';
-            
             const filtered = filter === 'all' ? matches : matches.filter(m => m.league === filter);
-            
-            if (filtered.length === 0) {
-                grid.innerHTML = `<div class="col-span-full text-center py-10 text-slate-500 italic">Aucun match trouvé pour ce filtre.</div>`;
-                return;
-            }
 
-            filtered.forEach(match => {
-                const matchCard = `
-                    <div class="card-gradient rounded-3xl p-6 border border-slate-800 transition-all duration-300 hover:border-blue-500/50 relative overflow-hidden group">
-                        
+            filtered.forEach(m => {
+                grid.innerHTML += `
+                    <div class="card-gradient rounded-3xl p-6 border border-slate-800 transition-all hover:border-blue-500/50">
                         <div class="flex justify-between items-start mb-4">
                             <div>
-                                <span class="text-[10px] font-black text-slate-500 uppercase tracking-widest mb-1 block">${match.country}</span>
-                                <h3 class="text-lg font-bold">
-                                    ${match.home} <span class="text-slate-600 font-normal">vs</span> ${match.away}
-                                </h3>
+                                <span class="text-[10px] font-black text-slate-500 uppercase tracking-widest block">${m.country}</span>
+                                <h3 class="text-lg font-bold">${m.home} <span class="text-slate-600 font-normal">vs</span> ${m.away}</h3>
                             </div>
-                            <div class="text-right">
-                                <span class="px-2 py-1 ${match.color} rounded text-[10px] font-black uppercase tracking-tighter">Proba: ${match.prob}</span>
-                            </div>
+                            <span class="px-2 py-1 ${m.color} rounded text-[10px] font-black">Proba: ${m.prob}</span>
                         </div>
-
-                        <div class="bg-slate-900/40 rounded-2xl p-4 border border-slate-700/30 mb-4">
-                            <div class="flex items-center gap-2 mb-1 text-blue-400">
-                                <i data-lucide="target" class="w-3 h-3"></i>
-                                <span class="text-[10px] font-bold uppercase tracking-widest">Conseil Stratégique</span>
-                            </div>
-                            <p class="text-base font-bold text-white mb-1">${match.bet}</p>
-                            <p class="text-[10px] text-slate-500 italic">"${match.scenario}"</p>
+                        <div class="bg-slate-900/40 rounded-2xl p-4 border border-slate-700/30 mb-4 text-center">
+                            <p class="text-base font-bold text-white mb-1">${m.bet}</p>
+                            <p class="text-[10px] text-slate-500 italic">"${m.scenario}"</p>
                         </div>
-
                         <div class="space-y-2 mb-4">
-                            <div class="flex justify-between text-[11px]">
-                                <span class="text-slate-400 uppercase tracking-tighter">Rating Global</span>
-                                <span class="text-slate-200 font-bold">${match.rating}</span>
-                            </div>
+                            <div class="flex justify-between text-[11px]"><span class="text-slate-400">Rating Global</span><span class="text-slate-200 font-bold">${m.rating}</span></div>
                             <div class="w-full bg-slate-800 h-1.5 rounded-full overflow-hidden flex">
-                                <div class="bg-blue-600 h-full" style="width: ${match.rating.split('/')[0]}%"></div>
-                                <div class="bg-slate-700 h-full" style="width: ${match.rating.split('/')[1]}%"></div>
+                                <div class="bg-blue-600 h-full" style="width: ${m.rating.split('/')[0]}%"></div>
+                                <div class="bg-slate-700 h-full" style="width: ${m.rating.split('/')[1]}%"></div>
                             </div>
                         </div>
-
                         <div class="flex items-start gap-2 pt-3 border-t border-slate-800 mb-3">
-                            <i data-lucide="brain" class="w-4 h-4 text-slate-600 mt-0.5 shrink-0"></i>
-                            <p class="text-[11px] text-slate-400 leading-tight">${match.logic}</p>
+                            <i data-lucide="brain" class="w-4 h-4 text-slate-600 shrink-0"></i>
+                            <p class="text-[11px] text-slate-400 leading-tight">${m.logic}</p>
                         </div>
-
                         <div class="grid grid-cols-2 gap-2">
                             <div class="bg-red-900/10 border border-red-900/30 rounded-xl p-2">
-                                <div class="flex items-center gap-1 mb-1 text-red-400">
-                                    <i data-lucide="alert-triangle" class="w-3 h-3"></i>
-                                    <span class="text-[9px] font-bold uppercase">À Éviter</span>
-                                </div>
-                                <p class="text-[10px] text-red-200 leading-tight">${match.trap}</p>
+                                <span class="text-[9px] font-bold uppercase text-red-400">À Éviter</span>
+                                <p class="text-[10px] text-red-200">${m.trap}</p>
                             </div>
                             <div class="bg-slate-800/50 border border-slate-700 rounded-xl p-2 text-center flex flex-col justify-center">
-                                <span class="text-[9px] text-slate-500 uppercase font-bold mb-1">Score Probable</span>
-                                <p class="text-xs font-bold text-white">${match.score}</p>
+                                <span class="text-[9px] text-slate-500 uppercase font-bold">Score</span>
+                                <p class="text-xs font-bold text-white">${m.score}</p>
                             </div>
                         </div>
-
-                    </div>
-                `;
-                grid.innerHTML += matchCard;
+                    </div>`;
             });
             lucide.createIcons();
         }
 
-        function filterLeague(league) {
-            document.querySelectorAll('.league-tab').forEach(tab => {
-                tab.classList.remove('active', 'text-blue-400');
-                tab.classList.add('text-slate-500');
-            });
-            const activeTab = document.getElementById(`tab-${league}`);
-            if(activeTab) {
-                activeTab.classList.add('active', 'text-blue-400');
-                activeTab.classList.remove('text-slate-500');
-            }
-            
-            renderMatches(league);
+        function filterLeague(l) {
+            document.querySelectorAll('.league-tab').forEach(t => t.classList.remove('active', 'text-blue-400'));
+            const active = document.getElementById(`tab-${l}`);
+            if(active) active.classList.add('active', 'text-blue-400');
+            renderMatches(l);
         }
 
-        window.onload = () => {
-            renderSpecialLists();
-            renderMatches();
-            lucide.createIcons();
-        };
+        window.onload = () => { renderSpecialLists(); renderMatches(); lucide.createIcons(); };
     </script>
 </body>
 </html>
